@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="frontend.View.KullaniciArayuz">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SİGORTALARIM"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Kasko Sigortası"
+                    BackgroundColor="LightBlue"
+                    Clicked="Kasko_Clicked"/>
+            <Button Text="Trafik Sigortası" 
+                    BackgroundColor="Red"
+                    Clicked="Trafik_Clicked"/>
+            <Button Text="Sağlık Sigortası"
+                    BackgroundColor="LightBlue"
+                    Clicked="Saglik_Clicked"/>
+            <Button Text="Hayat Sigortası"
+                    BackgroundColor="Red"
+                     Clicked="Hayat_Clicked"/>
+            <Button Text="Bireysel Emeklilik Sigortası"
+                    BackgroundColor="LightBlue"
+                     Clicked="Bireysel_Clicked"/>
+            <Button Text="Dask Sigortası"
+                    BackgroundColor="Red"
+                     Clicked="Dask_Clicked"/>
+            <Button Text="Ferdi Kaza Sigortası" 
+                    BackgroundColor="LightBlue"
+                     Clicked="Ferdi_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

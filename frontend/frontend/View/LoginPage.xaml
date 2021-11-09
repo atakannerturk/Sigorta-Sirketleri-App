@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="frontend.View.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ada Yazılıma Hoşgeldiniz..."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Image Source="ada.jpg" 
+                   Aspect="Fill"/>
+            <Label Text="Kullanıcı Girişi" 
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="Mail" 
+                   Placeholder="Mail Adresinizi Griniz"/>
+            <Entry x:Name="Parola" 
+                   Placeholder="Parolanızı Giriniz" 
+                   IsPassword="True"/>
+            <Switch x:Name="Switch" 
+                    HorizontalOptions="Start" 
+                    IsToggled="True" Toggled="Handle_Toggle"/>
+            <Label Text="Beni Hatırla" 
+                   IsVisible="{Binding Source={x:Reference Switch},Path=IsToggled}"/>
+            <Button x:Name="Giris" 
+                    Text="Giriş" 
+                    Clicked="Giris_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
